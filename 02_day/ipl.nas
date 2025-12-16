@@ -51,10 +51,10 @@ fin:
 
 msg:
 		DB		0x0a, 0x0a		; 换行两次
-		DB		"hello, world"
+		DB		"hello, make!"
 		DB		0x0a			; 换行
 		DB		0
 
-		RESB	0x7dfe-$		; 填写0x00直到0x001fe
+		times 510-($-$$) db 0
 
 		DB		0x55, 0xaa
