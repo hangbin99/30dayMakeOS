@@ -34,11 +34,11 @@
 ; 信息显示部分
 
 		DB		0x0a, 0x0a		; 换行两次
-		DB		"hello, world"
+		DB		"hello friend"
 		DB		0x0a			; 换行
 		DB		0
 
-		RESB	0x1fe-$			; 填写0x00直到0x001fe
+		times 0x1fe-($-$$) db 0		; 填写0x00直到0x001fe
 
 		DB		0x55, 0xaa
 

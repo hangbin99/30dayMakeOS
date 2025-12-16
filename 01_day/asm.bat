@@ -1,1 +1,1 @@
-..\z_tools\nask.exe helloos.nas helloos.img
+..\Windows\nasm-3.01\nasm.exe helloos.nas -o helloos.img
