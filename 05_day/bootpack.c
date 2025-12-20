@@ -68,7 +68,7 @@ void HariMain(void)
 	/* 显示鼠标 */
 	mx = (binfo->scrnx - 16) / 2; /* 计算画面的中心坐标*/
 	my = (binfo->scrny - 28 - 16) / 2;
-	init_mouse_cursor8(mcursor, COL8_008484);
+	init_mouse_cursor8(mcursor, 9);
 	putblock8_8(binfo->vram, binfo->scrnx, 16, 16, mx, my, mcursor, 16);
 
 	putfonts8_asc(binfo->vram, binfo->scrnx,  8,  8, COL8_FFFFFF, "ABC 123");
